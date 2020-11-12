@@ -114,10 +114,37 @@ const quoteBox = document.getElementById('quote-box');
 function printQuote () {
   let randomQuote = getRandomQuote(quotes);
   console.log(randomQuote);
-  quoteBox.innerHTML = `
+
+  let quoteHTML = `
     <p class="quote"> ${randomQuote.quote} </p>
     <p class="source"> ${randomQuote.source} </p>
   `;
+
+  if ( randomQuote.citation && randomQuote.year ) {
+    quoteHTML = `
+      <p class="quote">${randomQuote.quote}</p>
+      <p class="source">${randomQuote.source}
+        <span class="citation">${randomQuote.citation}</span>
+        <span class="year">${randomQuote.year}</span>
+      </p>
+    `;
+  } else if ( randomQuote.year ) {
+    quoteHTML = `
+      <p class="quote">${randomQuote.quote}</p>
+      <p class="source">${randomQuote.source}
+        <span class="year">${randomQuote.year}</span>
+      </p>
+    `;
+  } else if ( randomQuote.citation ) {
+    quoteHTML = `
+      <p class="quote">${randomQuote.quote}</p>
+      <p class="source">${randomQuote.source}
+        <span class="citation">${randomQuote.citation}</span>
+      </p>
+    `;
+  }
+
+  quoteBox.innerHTML = quoteHTML;
 }
 
 /***

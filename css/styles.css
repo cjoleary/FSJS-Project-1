@@ -10,6 +10,8 @@ body {
   color: white;
   font-family: 'Playfair Display', serif;
   padding: 5px;
+  margin: auto;
+  height: 100vh;
 }
 
 header {

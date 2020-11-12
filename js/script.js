@@ -92,6 +92,7 @@ const quotes = [
   },
 ];
 
+console.log(quotes);
 
 /***
  * `getRandomQuote` function
@@ -110,4 +111,4 @@ const quotes = [
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+// document.getElementById('load-quote').addEventListener("click", printQuote, false);

@@ -109,10 +109,19 @@ function getRandomQuote ( arr ) {
  * `printQuote` function
 ***/
 
+const quoteBox = document.getElementById('quote-box');
 
+function printQuote () {
+  let randomQuote = getRandomQuote(quotes);
+  console.log(randomQuote);
+  quoteBox.innerHTML = `
+    <p class="quote"> ${randomQuote.quote} </p>
+    <p class="source"> ${randomQuote.source} </p>
+  `;
+}
 
 /***
  * click event listener for the print quote button
 ***/
 
-// document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load-quote').addEventListener("click", printQuote(), false);

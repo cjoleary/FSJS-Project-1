@@ -84,6 +84,12 @@ const quotes = [
     citation: 'The Departed',
     year: '2006'
   },
+  {
+    quote: "I can see it. This one moment when you know you're not a sad story. You are alive and you stand up and see the lights on the buildings and everything that makes you wonder. And you're listening to that song on that drive with the people you love most in this world. And in this moment, I swear, we are infinite.",
+    source: 'Charlie',
+    citation: 'Perks of Being a Wallflower',
+    year: '2012'
+  },
 ];
 
 

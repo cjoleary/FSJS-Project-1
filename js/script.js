@@ -107,6 +107,9 @@ const quotes = [
 
 // console.log(quotes);
 
+// background colors array
+const colors = ['#3659A2', '#368FA2', '#36A27F', '#6E859C', '#033F90', '#038690', '#3E474F'];
+
 /***
  * `getRandomQuote` function
 ***/
@@ -118,6 +121,18 @@ function getRandomQuote ( arr ) {
 }
 
 // console.log(getRandomQuote(quotes))
+
+/***
+ * `getRandomColor` function
+***/
+
+// randomly chooses a color from the array, returns that color
+function getRandomColor ( arr ) {
+  let randomColor = arr[ Math.floor( Math.random() * arr.length ) ];
+  return randomColor;
+}
+
+// console.log(getRandomColor(colors));
 
 /***
  * `printQuote` function
@@ -173,6 +188,10 @@ function printQuote () {
 
   // sets quote box HTML to include random quote object properties
   quoteBox.innerHTML = quoteHTML;
+
+  // gets a random color from the colors array
+  let randomColor = getRandomColor(colors);
+  document.getElementById('body').style.backgroundColor = randomColor;
 }
 
 // adds quote to screen on page load

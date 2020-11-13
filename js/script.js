@@ -23,7 +23,7 @@ const quotes = [
     category: 'comedy / romance'
   },
   {
-    quote: 'Pain heals. Chicks dig scars. Glory lasts forever.',
+    quote: "I wish I could say something classy and inspirational, but that just wouldn't be our style.Pain heals. Chicks dig scars. Glory lasts forever.",
     source: 'Shane Falco',
     citation: 'The Replacements',
     year: '2000',
@@ -65,11 +65,11 @@ const quotes = [
     category: 'drama / romance'
   },
   {
-    quote: "We're all told at some point in time that we can no longer play the children's game, we just don't know when that's gonna be. Some of us are told at 18, some of us are told at 40, but we're all told.",
-    source: 'Scout Barry',
-    citation: 'Moneyball',
-    year: '2011',
-    category: 'sport / biography'
+    quote: "People ask me, will I remember them if I make it?  I tell them, will you remember me if I don't?",
+    source: 'William Gates',
+    citation: 'Hoop Dreams',
+    year: '1994',
+    category: 'documentary / sport'
   },
   {
     quote: "The only true currency in this bankrupt world is what you share with someone else when you're uncool.",
@@ -93,7 +93,7 @@ const quotes = [
     category: 'crime / thriller'
   },
   {
-    quote: "I can see it. This one moment when you know you're not a sad story. You are alive and you stand up and see the lights on the buildings and everything that makes you wonder. And you're listening to that song on that drive with the people you love most in this world. And in this moment, I swear, we are infinite.",
+    quote: "And you're listening to that song on that drive with the people you love most in this world. And in this moment, I swear, we are infinite.",
     source: 'Charlie',
     citation: 'Perks of Being a Wallflower',
     year: '2012',

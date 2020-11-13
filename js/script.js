@@ -189,7 +189,7 @@ function printQuote () {
   // sets quote box HTML to include random quote object properties
   quoteBox.innerHTML = quoteHTML;
 
-  // gets a random color from the colors array
+  // gets a random color from the colors array and apply it to the body
   let randomColor = getRandomColor(colors);
   document.getElementById('body').style.backgroundColor = randomColor;
 }
@@ -197,9 +197,12 @@ function printQuote () {
 // adds quote to screen on page load
 printQuote();
 
+// automatically generates a new quote and background color at a set interval of time
+setInterval(printQuote, 7000);
+
 /***
  * click event listener for the print quote button
 ***/
 
-// generates a new quote each time the show another quote button is clicked
+// generates a new quote and background color each time the show another quote button is clicked
 document.getElementById('load-quote').addEventListener("click", (e) => printQuote());

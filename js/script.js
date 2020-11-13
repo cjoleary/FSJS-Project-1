@@ -198,7 +198,7 @@ function printQuote () {
 printQuote();
 
 // automatically generates a new quote and background color at a set interval of time
-setInterval(printQuote, 7000);
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button

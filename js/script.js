@@ -23,7 +23,7 @@ const quotes = [
     category: 'comedy / romance'
   },
   {
-    quote: "I wish I could say something classy and inspirational, but that just wouldn't be our style.Pain heals. Chicks dig scars. Glory lasts forever.",
+    quote: "I wish I could say something classy and inspirational, but that just wouldn't be our style. Pain heals. Chicks dig scars. Glory lasts forever.",
     source: 'Shane Falco',
     citation: 'The Replacements',
     year: '2000',
@@ -102,7 +102,7 @@ const quotes = [
 ];
 
 // background colors array
-const colors = ['#3659A2', '#368FA2', '#36A27F', '#6E859C', '#033F90', '#038690', '#3E474F'];
+const colors = ['#3659A2', '#368FA2', '#36A27F', '#6E859C', '#033F90', '#038690', '#3E474F', '#90033F', '#384047'];
 
 
 /***

@@ -190,11 +190,23 @@ function printQuote () {
 printQuote();
 
 // automatically generates a new quote and background color at a set interval of time
-setInterval(printQuote, 10000);
+let timeInt;
+
+function autoChange(func){
+  timeInt = setInterval(func, 10000);
+};
+
+autoChange(printQuote);
+
+
 
 /***
  * click event listener for the print quote button
 ***/
 
 // generates a new quote and background color each time the show another quote button is clicked
-document.getElementById('load-quote').addEventListener("click", (e) => printQuote());
+document.getElementById('load-quote').addEventListener("click", (e) => { 
+  clearInterval(timeInt); // reset auto change time interval on click
+  printQuote(); // add random quote to the page
+  autoChange(printQuote); // add time interval to generate new quote
+});
